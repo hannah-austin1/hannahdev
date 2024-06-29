@@ -27,7 +27,7 @@ const Container = ({
   children: React.ReactNode;
 }) => {
   return (
-    <div className="relative inline-flex h-full w-full overflow-hidden rounded-full p-1 focus:outline-none focus:ring-2 focus:ring-background focus:ring-offset-2 focus:ring-offset-background">
+    <div className="relative inline-flex h-3/4 w-3/4 overflow-hidden rounded-full p-1 focus:outline-none focus:ring-2 focus:ring-background focus:ring-offset-2 focus:ring-offset-background">
       <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(var(--tw-gradient-stops))] from-primary via-background to-primary" />
       <span className="inline-flex h-full w-full items-center justify-center rounded-full y-1 bg-secondary backdrop-blur-3xl">
         {children}
@@ -40,7 +40,7 @@ export const SkillList = () => {
   return (
     <div className="flex flex-col">
       <div className="text-lg font-bold ml-3 mb-2">Technologies</div>
-      <div className="h-full overflow-scroll auto-rows-auto grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3 p-3">
+      <div className="h-full auto-rows-auto grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3 p-3">
         {skills.map((skill) => (
           <SkillCard key={skill.name} name={skill.name}>
             {skill.children}

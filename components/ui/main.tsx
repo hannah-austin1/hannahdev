@@ -2,11 +2,11 @@ import { CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import { ReactElement } from "react";
 
 export const MainContent = ({ items }: { items: Array<ReactElement> }) => (
-  <main className="flex-1 p-2 my-2 page-ui">
-    <CarouselContent>
+  <div className="h-full mx-1 flex-1 bg-gradient-to-b from-primary to-gradient">
+    <CarouselContent className="h-full">
       {items.map((item, index) => (
         <CarouselItem key={index}>{item}</CarouselItem>
       ))}
     </CarouselContent>
-  </main>
+  </div>
 );

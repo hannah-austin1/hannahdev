@@ -11,7 +11,7 @@ import {
 import { CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 export const Footer = () => (
-  <footer className="px-6 py-4 flex items-center justify-between  bg-[rgba(40,40,40,0.70)] rounded-lg shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]">
+  <footer className="sticky z-10 px-6 py-4 flex items-center justify-between  page-ui rounded-bl-lg rounded-br-lg">
     <div className="flex items-center gap-4">
       <img
         src="/placeholder.svg"

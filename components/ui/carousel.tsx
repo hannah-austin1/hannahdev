@@ -151,7 +151,7 @@ const Carousel = React.forwardRef<
         <div
           ref={ref}
           onKeyDownCapture={handleKeyDown}
-          className={cn("relative", className)}
+          className={cn("relative overflow-hidden", className)}
           role="region"
           aria-roledescription="carousel"
           {...props}
@@ -171,7 +171,7 @@ const CarouselContent = React.forwardRef<
   const { carouselRef, orientation } = useCarousel();
 
   return (
-    <div ref={carouselRef} className="h-full overflow-x-hidden">
+    <div ref={carouselRef} className="overflow-x-hidden h-full">
       <div
         ref={ref}
         className={cn(
@@ -198,7 +198,7 @@ const CarouselItem = React.forwardRef<
       role="group"
       aria-roledescription="slide"
       className={cn(
-        "min-w-0 shrink-0 grow-0 basis-full",
+        "min-w-0 shrink-0 grow basis-full",
         orientation === "horizontal" ? "pl-4" : "pt-4",
         className
       )}
@@ -259,7 +259,7 @@ const CarouselSidebar = () => {
   ];
   const { scrollTo, currentSlide } = useCarousel();
   return (
-    <div className="min-h-screen flex flex-col items-start page-ui mr-3">
+    <div className="h-full flex flex-col items-start page-ui mr-1 rounded-lg">
       <Link
         href="#"
         className="flex justify-start items-center space-x-2 text-white"

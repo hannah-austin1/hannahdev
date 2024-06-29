@@ -17,13 +17,17 @@ const items = [
 
 function Layout() {
   return (
-    <div className="flex flex-col min-h-screen max-h-screen p-3 bg-background text-white">
-      <Carousel>
-        <div className="flex">
+    <div className="flex flex-col h-screen overflow-hidden p-2 bg-background text-white">
+      <Carousel className="h-full">
+        <div className="flex h-full">
           <CarouselSidebar />
-          <div className="flex-1 flex flex-col">
-            <Header />
-            <MainContent items={items} />
+          <div className="flex-1 flex flex-col h-full">
+            <div className="overflow-scroll">
+              <Header />
+              <main className="flex-1">
+                <MainContent items={items} />
+              </main>
+            </div>
             <Footer />
           </div>
         </div>

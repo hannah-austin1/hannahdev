@@ -5,7 +5,7 @@ import Album from "@/images/Album.png";
 import Image from "next/image";
 
 export const Home = () => (
-  <div className="h-full flex items-start justify-center space-x-6 bg-gradient-to-b from-primary to-gradient p-6 rounded-lg shadow-lg">
+  <div className="h-full flex items-start justify-center">
     <Image
       src={Album}
       alt="Hannah Austin Album"

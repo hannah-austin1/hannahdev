@@ -11,6 +11,6 @@
 
 @layer components {
   .page-ui {
-    @apply rounded-lg bg-[rgba(40,40,40,0.9)] shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset];
+    @apply bg-[rgba(40,40,40,0.9)] shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset];
   }
 }
