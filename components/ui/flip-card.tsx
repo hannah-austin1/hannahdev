@@ -73,11 +73,9 @@ export const FlipCard: React.FC<FlipCardProps> = ({
         <div className="flex items-center justify-center h-full rounded-xl">
           <Image
             src={image}
-            width={0}
-            height={0}
-            sizes="100vw"
             alt={alt}
             className="rounded-xl w-full h-full object-cover"
+            priority
           />
         </div>
       </div>

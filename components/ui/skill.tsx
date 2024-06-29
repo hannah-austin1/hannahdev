@@ -28,7 +28,7 @@ const Container = ({
 }) => {
   return (
     <div className="relative inline-flex h-3/4 w-3/4 overflow-hidden rounded-full p-1 focus:outline-none focus:ring-2 focus:ring-background focus:ring-offset-2 focus:ring-offset-background">
-      <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(var(--tw-gradient-stops))] from-primary via-background to-primary" />
+      <span className="absolute inset-[-1000%] ate-[spin_2s_linear_infinite] bg-[conic-gradient(var(--tw-gradient-stops))] from-primary via-background to-primary" />
       <span className="inline-flex h-full w-full items-center justify-center rounded-full y-1 bg-secondary backdrop-blur-3xl">
         {children}
       </span>

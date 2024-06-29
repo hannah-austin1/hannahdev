@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { Header } from "@/components/ui/header";
 import { Footer } from "@/components/ui/footer";
 import { About } from "@/components/ui/about";
