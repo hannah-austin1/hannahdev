@@ -17,7 +17,7 @@ const items = [
 
 function Layout() {
   return (
-    <div className="flex flex-col min-h-screen p-3 bg-background text-white">
+    <div className="flex flex-col min-h-screen max-h-screen p-3 bg-background text-white">
       <Carousel>
         <div className="flex">
           <CarouselSidebar />
