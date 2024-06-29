@@ -1,5 +1,10 @@
+/* eslint-disable import/no-anonymous-default-export */
 import { fontFamily } from "tailwindcss/defaultTheme";
 const { createThemes } = require("tw-colors");
+const {
+  iconsPlugin,
+  getIconCollections,
+} = require("@egoist/tailwindcss-icons");
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -33,6 +38,7 @@ export default {
     },
   },
   plugins: [
+    iconsPlugin({ collections: getIconCollections(["all"]) }),
     require("tailwindcss-animate"),
     createThemes({
       low: {

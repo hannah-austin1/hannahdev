@@ -1,80 +1,70 @@
-import { GrGraphQl } from "react-icons/gr";
-import { DiJavascript1 } from "react-icons/di";
-import { FaGithub } from "react-icons/fa";
-import { TbBrandReactNative } from "react-icons/tb";
-import {
-  SiTypescript,
-  SiReact,
-  SiAmazonaws,
-  SiNodedotjs,
-  SiNextdotjs,
-  SiHtml5,
-  SiCss3,
-  SiTailwindcss,
-  SiPostgresql,
-  SiJest,
-} from "react-icons/si";
-import { VscVscode } from "react-icons/vsc";
-
 export const skills = [
   {
     name: "GraphQL",
-    children: <GrGraphQl className="h-2/3 w-2/3" />,
+    icon: "mdi:graphql",
   },
   {
     name: "JavaScript",
-    children: <DiJavascript1 className="h-2/3 w-2/3" />,
+    icon: "ri:javascript-line",
   },
   {
     name: "TypeScript",
-    children: <SiTypescript className="h-2/3 w-2/3" />,
+    icon: "nonicons:typescript-16",
   },
   {
     name: "React",
-    children: <SiReact className="h-2/3 w-2/3" />,
+    icon: "akar-icons:react-fill",
   },
   {
     name: "React Native",
-    children: <TbBrandReactNative className="h-2/3 w-2/3" />, // React Native specific icon is not available, using React Router icon as placeholder
+    icon: "fontisto:app-store",
   },
   {
     name: "AWS",
-    children: <SiAmazonaws className="h-2/3 w-2/3" />,
+    icon: "mdi:aws",
   },
   {
     name: "NodeJS",
-    children: <SiNodedotjs className="h-2/3 w-2/3" />,
+    icon: "fa6-brands:node",
   },
   {
     name: "NextJS",
-    children: <SiNextdotjs className="h-2/3 w-2/3" />,
+    icon: "teenyicons:nextjs-outline",
   },
   {
     name: "HTML",
-    children: <SiHtml5 className="h-2/3 w-2/3" />,
+    icon: "akar-icons:html-fill",
   },
   {
     name: "CSS",
-    children: <SiCss3 className="h-2/3 w-2/3" />,
+    icon: "ph:file-css",
   },
   {
     name: "Tailwind",
-    children: <SiTailwindcss className="h-2/3 w-2/3" />,
+    icon: "teenyicons:tailwind-solid",
   },
   {
     name: "SQL",
-    children: <SiPostgresql className="h-2/3 w-2/3" />, // Assuming PostgreSQL icon for SQL
+    icon: "hugeicons:sql", // Using a generic database icon for SQL
   },
   {
     name: "Jest",
-    children: <SiJest className="h-2/3 w-2/3" />,
+    icon: "simple-icons:jest",
   },
   {
     name: "VSCode",
-    children: <VscVscode className="h-2/3 w-2/3" />,
+    icon: "codicon:vscode",
   },
   {
     name: "Github",
-    children: <FaGithub className="h-2/3 w-2/3" />,
+    icon: "mdi:github",
+  },
+  {
+    name: "Docker",
+    icon: "nonicons:docker-16",
+  },
+  {
+    name: "Azure Devops",
+    icon: "codicon:azure-devops",
   },
 ];
